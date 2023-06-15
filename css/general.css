@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 :root {
     /* Colores */
     --textoAzul: #2C285B;
     --degradado: #02332E;
+    --degradadoCompleto: linear-gradient(93.58deg, rgba(2, 51, 46, 0.79) 2.95%, rgba(0, 0, 0, 0) 97.05%);
     --verdeAgua: #49A68B;
     --fondo: #F6FFFC;
     --colorIndicadorNav: #47CEA7;
@@ -12,10 +19,162 @@
 
     /* Fuentes */
     --fontTitulo: 'Acme', sans-serif;
-    --fontSecundaria: 'Nunito Sans', sans-serif;
+    --fontSecundaria: 'Nunito', sans-serif;
 
 
     /* Otros */
-    --boxShadow: 0px 0px 10px rgba(156, 173, 198, 0.5);
+    --boxShadow1: 0px 0px 10px rgba(156, 173, 198, 0.5);
+    --boxShadow2: 0px 0px 4px rgba(0, 0, 0, 0.15);
     --borderRadius: 20px;
+}
+
+/* ----- General ----- */
+
+body {
+    background-color: var(--fondo);
+    font-family: var(--fontSecundaria);
+}
+
+h1 {
+    font-family: var(--fontTitulo);
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 35px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--textoAzul);
+}
+
+.container {
+    width: 89%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ----- Header ----- */
+
+header {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+nav .logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+}
+
+nav .menu {
+    width: 30px;
+    height: 20px;
+}
+
+#mobile {
+    display: none;
+}
+
+/* ----- Responsive ----- */
+
+@media screen and (min-width: 720px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 890px) {
+    #desktop {
+        display: none;
+    }
+
+    header {
+        position: relative;
+    }
+
+    #mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        background-color: rgba(255, 255, 255, 0.95);
+    }
+
+    .items, .items ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .items ul {
+        list-style: none;
+        gap: 24px;
+    }
+
+    .items a {
+        font-size: 16px;
+    }
+
+    #mobile .boton {
+        font-family: 'Nunito';
+        font-weight: 400;
+        font-size: 16px;
+        width: fit-content;
+        background: var(--verdeAgua);
+        box-shadow: var(--boxShadow2);
+        border-radius: var(--borderRadius);
+        border: none;
+        padding: 10px 21px;
+        color: white;
+        text-align: center;
+    }
+
+    nav .container {
+        margin: 16px auto;
+    }
+
+    .items li {
+        border-bottom: 2px solid transparent;
+        transition: all .5s;
+    }
+
+    .items li:hover {
+        border-bottom: 2px solid var(--colorIndicadorNav);
+    }
+}
+
+@media screen and (min-width: 980px) {
+    h1 {
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-weight: 400;
+    }
 }

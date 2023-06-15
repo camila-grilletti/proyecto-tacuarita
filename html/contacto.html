@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Proyecto Tacuarita</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="desktop" class="container">
+                <img src="../recursos/imagenes/Logo.png" alt="" class="logo">
+                <img src="../recursos/iconos/menu.png" alt="" class="menu">
+            </div>
+            <div id="mobile" class="container">
+                <div class="items">
+                    <img src="../recursos/imagenes/Logo.png" alt="" class="logo">
+                    <ul>
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="">Nosotros</a></li>
+                        <li><a href="">Noticias</a></li>
+                        <li><a href="">Contacto</a></li>
+                        <li><a href="">Descargas</a></li>
+                    </ul>
+                </div>
+                <button class="boton">Donaciones</button>
+            </div>
+        </nav>
+    </header>
+    <section class="presentacion">
+        <img src="../recursos/imagenes/DSC_0056.JPG" alt="" class="presentacionImg">
+        <div class="presentacionContenedor">
+            <div class="container">
+                <h1 class="presentacionTitulo">Contacto</h1>
+            </div>
+        </div>
+    </section>
+    <section id="formulario">
+        <div class="container">
+            <div class="formulario">
+                <div class="formularioInfo">
+                    <h2>Formulario de contacto</h2>
+                    <p>Escríbenos y en breve nos pondremos en contacto contigo.</p>
+                </div>
+                <form class="formularioBloque" id="form">
+                    <div class="inputContenedor">
+                        <label for="nombre" class="subtitulo">Nombre</label>
+                        <input type="text" placeholder="Tacuarito" name="nombre" id="nombre" class="campoTexto"
+                            required>
+                    </div>
+                    <div class="inputContenedor">
+                        <label for="email" class="subtitulo">Email</label>
+                        <input type="email" name="email" placeholder="voluntario@tacuarita.com" id="email"
+                            class="campoTexto" required>
+                    </div>
+                    <div class="inputContenedor">
+                        <label for="asunto" class="subtitulo">Asunto</label>
+                        <input type="text" placeholder="Asunto" name="nombre" id="nombre" class="campoTexto"
+                            required>
+                    </div>
+                    <div class="inputContenedor">
+                        <label for="mensaje" class="subtitulo">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" cols="30" rows="10" class="campoTexto"></textarea>
+                    </div>
+                    <button type="submit" id="button" class="boton">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/contacto.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+    <script type="text/javascript">
+        emailjs.init('78PsTcmbN6QlIrW8-')
+    </script>
+</body>
+
+</html>

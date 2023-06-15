@@ -1,0 +1,171 @@
+/* ----- Presentación ----- */
+
+.presentacion {
+    position: relative;
+    width: 100%;
+    height: 208px;
+    max-height: 228px;
+}
+
+.presentacion::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--degradadoCompleto);
+    z-index: 0;
+}
+
+.presentacionImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.presentacionContenedor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.presentacionContenedor .container {
+    height: 100%;
+    padding: 29px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ----- Nosotros ----- */
+
+.nosotros {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.bloque, .bloqueImg {
+    background: #FFFFFF;
+    box-shadow: var(--boxShadow2);
+    border-radius: var(--borderRadius);
+    color: var(--textoAzul);
+}
+
+.bloqueContenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 21px 16px;
+}
+
+.bloque h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.bloque p {
+    font-size: 14px;
+    color: black;
+}
+
+.bloqueImg {
+    width: 100%;
+    height: 262px;
+    object-fit: cover;
+}
+
+.bloqueContenedorTexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+#imagenDesk {
+    display: none;
+}
+
+.imagenDesk1 {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.imagenDesk2 {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* ----- Responsive ----- */
+
+@media screen and (min-width: 720px) {
+    .bloque h2 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .bloque h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .bloque p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 890px) {
+    #imagenDesk {
+        display: flex;
+    }
+
+    #imagenMob {
+        display: none;
+    }
+
+    .bloqueContenedor {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .bloqueContenedorTexto {
+        padding: 50px;
+        width: 50%;
+    }
+
+    .bloqueImg {
+        width: 50%;
+        height: unset;
+    }
+
+    .presentacionContenedor .container {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 890px) {
+    .bloque h2 {
+        font-size: 20px;
+    }
+
+    .nosotros {
+        margin: 140px 0;
+        gap: 140px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .bloque h2 {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .bloque p {
+        font-size: 18px;
+    }
+}
