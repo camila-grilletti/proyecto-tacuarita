@@ -1,0 +1,254 @@
+/* ----- Presentación ----- */
+
+.presentacion {
+    position: relative;
+    width: 100%;
+    height: 208px;
+    max-height: 228px;
+}
+
+.presentacion::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--degradadoCompleto);
+    z-index: 0;
+}
+
+.presentacionImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.presentacionContenedor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.presentacionContenedor .container {
+    height: 100%;
+    padding: 29px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* ----- Botón ----- */
+
+.boton {
+    font-family: "Nunito";
+    font-weight: 400;
+    font-size: 16px;
+    width: fit-content;
+    background: var(--verdeAgua);
+    box-shadow: var(--boxShadow2);
+    border-radius: var(--borderRadius);
+    border: none;
+    padding: 10px 33px;
+    color: white;
+    cursor: pointer;
+}
+
+.botonCancelar {
+    background-color: white;
+    color: var(--verdeAgua);
+    border: 1px solid var(--verdeAgua);
+}
+
+/* Descargas */
+
+.descargas {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.descargasInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: var(--textoAzul);
+}
+
+.descargasInfo h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.descargasInfo p {
+    font-size: 18px;
+    color: black;
+}
+
+.descargasBloques {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.descargasBloque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: var(--borderRadius);
+    box-shadow: var(--boxShadow2);
+    padding: 39px 20px 38px 19px;
+    height: 100%;
+    width: 100%;
+}
+
+.descargasBloque img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.descargasBloque h3 {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--textoAzul);
+    margin-top: 34px;
+    text-align: center;
+}
+
+.descargasBloque p {
+    font-size: 14px;
+    color: var(--textoAzul);
+    text-align: center;
+    margin-top: 16px;
+}
+
+.descargasBloque .boton {
+    margin-top: 32px;
+}
+
+.descargasSubInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    gap: 13px;
+    margin-top: -16px;
+    text-align: right;
+}
+
+.descargasSubInfo p {
+    color: rgba(36, 38, 83, 0.5);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.descargasSubInfo a {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--verdeAgua);
+    border-bottom: 1px solid var(--verdeAgua);
+}
+
+/* Dialog */
+
+.containerdialog {
+    position: relative;
+}
+
+dialog {
+    padding: 33px 40px;
+    background: white;
+    max-width: 400px;
+    padding-top: 2rem;
+    border-radius: var(--borderRadius);
+    border: none;
+    box-shadow:  rgba(15, 9, 9, 0.5);
+    margin: auto;
+}
+
+.contenedorDialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+}
+
+dialog::backdrop {
+    animation: fadeIn 1s ease both;
+    background: rgba(22, 22, 22, 0.4);
+    z-index: 2;
+    backdrop-filter: blur(20px);
+}
+
+dialog h2 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.salirWebBotones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.salirWebBotones a {
+    color: white;
+}
+
+/* ----- Responsive ----- */
+
+@media screen and (min-width: 600px) {
+    .descargasInfo h2 {
+        font-size: 28px;
+    }
+
+    .descargasBloques {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 24px;
+    }
+}
+
+@media screen and (min-width: 890px) {
+    .descargas {
+        margin: 40px 0;
+        gap: 40px;
+    }
+
+    .presentacionContenedor .container {
+        justify-content: center;
+    }
+
+    .descargasInfo p {
+        font-weight: 500;
+    }
+
+    .descargasBloques {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 24px;
+    }
+
+    .descargasBloque h3 {
+        font-size: 28px;
+    }
+
+    .descargasBloque p {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,257 @@
+/* ----- Presentación ----- */
+
+.presentacion {
+    position: relative;
+    width: 100%;
+    height: 208px;
+    max-height: 228px;
+}
+
+.presentacion::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--degradadoCompleto);
+    z-index: 0;
+}
+
+.presentacionImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.presentacionContenedor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.presentacionContenedor .container {
+    height: 100%;
+    padding: 29px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* ----- Formulario ----- */
+
+.formulario {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.formularioInfo h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--textoAzul);
+    margin: 0;
+}
+
+.formularioInfo p {
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+}
+
+.formularioInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* ----- Bloque formulario ----- */
+
+.formularioBloque {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 29px;
+    background: #FFFFFF;
+    box-shadow: var(--boxShadow2);
+    border-radius: var(--borderRadius);
+    color: var(--textoAzul);
+    width: 100%;
+    max-width: 665px;
+}
+
+.inputContenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.inputContenedor .subtitulo {
+    font-weight: 500;
+    font-size: 14px;
+    color: black;
+}
+
+.inputContenedor .campoTexto {
+    font-family: var(--fontSecundaria);
+    font-weight: 500;
+    font-size: 12px;
+    color: black;
+    padding: 10px 14px;
+    outline: none;
+    border: 1px solid rgba(44, 40, 91, 0.5);
+    border-radius: 10px;
+}
+
+#mensaje {
+    resize: none;
+}
+
+/* ----- Botón ----- */
+
+.boton {
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 16px;
+    width: 100%;
+    background: var(--verdeAgua);
+    box-shadow: var(--boxShadow2);
+    border-radius: var(--borderRadius);
+    border: none;
+    padding: 10px 0;
+    color: white;
+    cursor: pointer;
+}
+
+/* Dialog */
+
+.containerdialog {
+    position: relative;
+}
+
+dialog {
+    padding: 33px 40px;
+    background: white;
+    max-width: 400px;
+    padding-top: 2rem;
+    border-radius: var(--borderRadius);
+    border: none;
+    box-shadow:  rgba(15, 9, 9, 0.5);
+    margin: auto;
+}
+
+.contenedorDialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+}
+
+dialog::backdrop {
+    animation: fadeIn 1s ease both;
+    background: rgba(22, 22, 22, 0.4);
+    z-index: 2;
+    backdrop-filter: blur(20px);
+}
+
+dialog h2 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+dialog img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+/* ----- Responsive ----- */
+
+@media screen and (min-width: 720px) {
+    .formularioInfo h2 {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .formularioInfo p {
+        font-size: 17px;
+    }
+
+    .inputContenedor .subtitulo {
+        font-weight: 500;
+        font-size: 17px;
+    }
+    
+    .inputContenedor .campoTexto {
+        font-weight: 600;
+        font-size: 17px;
+    }
+
+    .select select {
+        font-size: 17px;
+        font-weight: 600;
+    }
+    
+    .select select option {
+        font-size: 17px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 890px) {
+    .presentacionContenedor .container {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .formularioInfo h2 {
+        font-size: 28px;
+    }
+
+    .formularioInfo p {
+        font-size: 18px;
+    }
+
+    .inputContenedor .subtitulo {
+        font-size: 18px;
+    }
+    
+    .inputContenedor .campoTexto {
+        font-size: 18px;
+    }
+
+    .select select {
+        font-size: 18px;
+    }
+    
+    .select select option {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .formularioInfo p {
+        font-size: 18px;
+    }
+    
+    .inputContenedor .campoTexto {
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .select select {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .select select option {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargas | Proyecto Tacuarita</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/descargas.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="desktop" class="container">
+                <img src="../recursos/imagenes/Logo.png" alt="" class="logo">
+                <img src="../recursos/iconos/menu.png" alt="" class="menu">
+            </div>
+            <div id="mobile" class="container">
+                <div class="items">
+                    <img src="../recursos/imagenes/Logo.png" alt="" class="logo">
+                    <ul>
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="">Nosotros</a></li>
+                        <li><a href="">Noticias</a></li>
+                        <li><a href="">Contacto</a></li>
+                        <li><a href="">Descargas</a></li>
+                    </ul>
+                </div>
+                <button class="boton">Donaciones</button>
+            </div>
+        </nav>
+    </header>
+    <section class="presentacion">
+        <img src="../recursos/imagenes/DSC_0056.JPG" alt="" class="presentacionImg">
+        <div class="presentacionContenedor">
+            <div class="container">
+                <h1 class="presentacionTitulo">Descargas</h1>
+            </div>
+        </div>
+    </section>
+    <section id="descargas">
+        <div class="container">
+            <div class="descargas">
+                <div class="descargasInfo">
+                    <h2>Material descargable</h2>
+                    <p>En este espacio podrás encontrar recursos para adentrarte en el mundo de nuestras nativas.
+                        Explora y pon en práctica conocimientos acerca de la flora cordobesa para expandirlas en la
+                        ciudad y restaurar nuestro ecosistema.</p>
+                </div>
+                <div class="descargasBloques">
+                    <div class="descargasBloque">
+                        <img src="/recursos/iconos/edit_square.png" alt="">
+                        <h3>Cuaderno naturista</h3>
+                        <p>Una herramienta para descubrir y explorar la flora nativa cordobesa en detalle.</p>
+                        <button class="boton" id="descargarCuaderno">Descargar</button>
+                    </div>
+                    <div class="descargasBloque">
+                        <img src="/recursos/iconos/aod.jpeg" alt="">
+                        <h3>Manual de germinación</h3>
+                        <p>Aprendé cómo iniciarte en la producción de árboles nativos de Córdoba.</p>
+                        <button class="boton">Descargar</button>
+                    </div>
+                    <div class="descargasBloque">
+                        <img src="/recursos/iconos/auto_stories.png" alt="">
+                        <h3>Manual digital</h3>
+                        <p>Versión digital del manual de germinación y siembra.</p>
+                        <button class="boton">Descargar</button>
+                    </div>
+                </div>
+                <div class="descargasSubInfo">
+                    <p>Antes de imprimir en papel, asegúrate de darle el uso adecuado.</p>
+                    <a href="#">Ver todos los descargables</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <dialog id="salirWeb">
+        <div class="contenedorDialog">
+            <h2>Estás saliendo del sitio<br>¿Querés continuar?</h2>
+            <div class="salirWebBotones">
+                <a href="https://drive.google.com/file/d/1ZXLGpMqyaptP7qcvVlCCMYDW_NL_UJ4j/view?usp=drive_link"
+                    target="_blank" class="boton">Si</a>
+                <button class="boton botonCancelar" id="salirWebNo">No</button>
+            </div>
+        </div>
+    </dialog>
+    <script src="/js/dialog.js"></script>
+</body>
+
+</html>

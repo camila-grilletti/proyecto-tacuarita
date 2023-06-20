@@ -359,6 +359,9 @@ height: 100%;
    color: white;
    display: none;
 }
+.botonCorredorVer{
+   display: none;
+}
 
 .boxCorredor button{
    /* margin-top: 78px;
@@ -429,7 +432,7 @@ height: 100%;
    box-shadow: var(--boxShadow2);
    width: 165px;
    height: 40px;
-   color: black;
+   color: var(--textoAzul);
    font-family: var(--fontSecundaria);
    line-height: 20px;
    text-align: center;
@@ -773,7 +776,7 @@ height: 100%;
    }
 
    .margenTitulo{
-      margin-bottom: -40px;
+      margin-bottom: -150px;
    }
 
    .slider { 
@@ -888,6 +891,14 @@ height: 100%;
    line-height: 20px;
    text-align: center;
 }
+.botonCorredorVer{
+   display: block;
+}
+
+.botonCorredorMobile{
+   display: none;
+}
+
 
 /* areas del proyecto */
 

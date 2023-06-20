@@ -10,6 +10,7 @@
     /* Colores */
     --textoAzul: #2C285B;
     --degradado: #02332E;
+    --degradadoCompleto: linear-gradient(93.58deg, rgba(2, 51, 46, 0.79) 2.95%, rgba(0, 0, 0, 0) 97.05%);
     --verdeAgua: #49A68B;
     --degradadoCompleto: linear-gradient(93.58deg, rgba(2, 51, 46, 0.79) 2.95%, rgba(0, 0, 0, 0) 97.05%);
     --fondo: #F6FFFC;
@@ -27,14 +28,12 @@
     --boxShadow2: 0px 0px 4px rgba(0, 0, 0, 0.15);
     --borderRadius: 20px;
 }
+
+/* ----- General ----- */
+
 body {
     background-color: var(--fondo);
     font-family: var(--fontSecundaria);
-}
-
-a {
-    text-decoration: none;
-    color: var(--textoAzul);
 }
 
 h1 {
@@ -46,15 +45,18 @@ h1 {
     line-height: 35px;
 }
 
+a {
+    text-decoration: none;
+    color: var(--textoAzul);
+}
+
 .container {
     width: 89%;
     max-width: 1200px;
     margin: auto;
 }
 
-
-/* Header */
-
+/* ----- Header ----- */
 
 header {
     position: absolute;
@@ -150,6 +152,7 @@ nav .menu {
         padding: 10px 21px;
         color: white;
         text-align: center;
+        cursor: pointer;
     }
 
     nav .container {
