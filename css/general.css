@@ -151,6 +151,7 @@ nav .menu {
         padding: 10px 21px;
         color: white;
         text-align: center;
+        cursor: pointer;
     }
 
     nav .container {

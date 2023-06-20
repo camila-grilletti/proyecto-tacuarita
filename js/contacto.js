@@ -1,4 +1,5 @@
 const btn = document.getElementById('button');
+const dialogForm = document.getElementById('formularioEnviado');
 
 document.getElementById('form')
     .addEventListener('submit', function (event) {
@@ -12,6 +13,10 @@ document.getElementById('form')
         emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
                 btn.textContent = 'Enviar';
+                dialogForm.showModal();
+                setTimeout(() => {
+                    dialogForm.close();
+                }, "1000");
             }, (err) => {
                 btn.textContent = 'Enviar';
                 alert(JSON.stringify(err));
