@@ -1,0 +1,187 @@
+/* ----- Presentación ----- */
+
+.presentacion {
+    position: relative;
+    width: 100%;
+    height: 208px;
+    max-height: 228px;
+}
+
+.presentacion::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--degradadoCompleto);
+    z-index: 0;
+}
+
+.presentacionImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.presentacionContenedor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.presentacionContenedor .container {
+    height: 100%;
+    padding: 29px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* ----- Preguntas ----- */
+
+#preguntas {
+    margin: 40px 0;
+}
+
+/* ----- Accordion ----- */
+
+.accordion .accordion-item {
+    border-bottom: 1px solid var(--textoAzul);
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+    border-bottom: none;
+}
+
+.accordion button[aria-expanded='true'] {
+    padding: 1em 0 0 0;
+}
+
+.accordion button {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1em 0;
+    color: var(--textoAzul);
+    font-size: 1.15rem;
+    font-weight: 700;
+    border: none;
+    background: none;
+    outline: none;
+    font-family: var(--fontSecundaria);
+}
+
+.accordion button:hover,
+.accordion button:focus {
+    cursor: pointer;
+    color: var(--textoAzul);
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+    cursor: pointer;
+    color: var(--textoAzul);
+    border: 1px solid var(--textoAzul);
+}
+
+.accordion button .accordion-title {
+    font-size: 18px;
+    width: 80%;
+    text-align: initial;
+}
+
+.accordion button .icon, .accordion button .iconUp {
+    display: inline-block;
+    top: 18px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.accordion button .iconUp {
+    display: none;
+}
+
+.accordion button[aria-expanded='true'] {
+    color: var(--verdeAgua);
+}
+
+.accordion button[aria-expanded='true'] .icon {
+    display: none;
+}
+
+.accordion button[aria-expanded='true'] .iconUp {
+    display: block;
+}
+
+
+.accordion button[aria-expanded='true']+.accordion-content {
+    opacity: 1;
+    max-height: 35em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+    font-size: 1rem;
+    margin: 24px 0;
+    color: var(--textoAzul);
+    font-weight: 600;
+}
+
+.accordion .accordion-content ul {
+    list-style-position: inside;
+    margin-left: 10px;
+    margin-top: -10px;
+    color: var(--textoAzul);
+    font-weight: 600;
+}
+
+/* ----- Responsive ----- */
+
+@media screen and (min-width: 890px) {
+    .presentacionContenedor .container {
+        justify-content: center;
+    }
+
+    #preguntas {
+        margin: 96px 0;
+    }
+
+    .accordion button .accordion-title {
+        font-size: 19px;
+    }
+
+    .accordion button[aria-expanded='true']+.accordion-content {
+        max-height: 25em;
+    }
+
+    .accordion button .icon, .accordion button .iconUp {
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        right: 50px;
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+    }
+    
+    .accordion button .iconUp {
+        display: none;
+    }
+}

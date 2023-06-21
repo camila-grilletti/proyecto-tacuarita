@@ -85,8 +85,8 @@
 }
 
 .descargasInfo p {
-    font-size: 18px;
-    color: black;
+    font-size: 14px;
+    color: var(--textoAzul);
 }
 
 .descargasBloques {
@@ -225,15 +225,20 @@ dialog h2 {
 
 @media screen and (min-width: 890px) {
     .descargas {
-        margin: 40px 0;
+        margin: 96px 0;
         gap: 40px;
     }
 
     .presentacionContenedor .container {
         justify-content: center;
     }
+    
+    .descargasInfo {
+        gap: 22px;
+    }
 
     .descargasInfo p {
+        font-size: 18px;
         font-weight: 500;
     }
 
