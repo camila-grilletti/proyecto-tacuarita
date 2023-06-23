@@ -109,7 +109,8 @@ nav .menu {
     }
 
     header {
-        position: relative;
+        position: sticky;
+        top: 0;
     }
 
     #mobile {

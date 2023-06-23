@@ -58,7 +58,7 @@
 
 .formularioInfo p {
     font-size: 14px;
-    color: black;
+    color: var(--textoAzul);
     font-weight: 400;
 }
 
@@ -92,7 +92,7 @@
 .inputContenedor .subtitulo {
     font-weight: 500;
     font-size: 14px;
-    color: black;
+    color: var(--textoAzul);
 }
 
 .inputContenedor .campoTexto {
@@ -121,7 +121,7 @@
     box-shadow: var(--boxShadow2);
     border-radius: var(--borderRadius);
     border: none;
-    padding: 10px 0;
+    padding: 10px 0px;
     color: white;
     cursor: pointer;
 }
@@ -186,11 +186,6 @@ dialog img {
         font-weight: 500;
         font-size: 17px;
     }
-    
-    .inputContenedor .campoTexto {
-        font-weight: 600;
-        font-size: 17px;
-    }
 
     .select select {
         font-size: 17px;
@@ -204,6 +199,32 @@ dialog img {
 }
 
 @media screen and (min-width: 890px) {
+    .formulario {
+        margin: 96px 0;
+        gap: 65px;
+    }
+
+    .formularioInfo {
+        gap: 22px;
+    }
+
+    .inputContenedor {
+        gap: 16px;
+    }
+
+    .inputContenedor .campoTexto {
+        padding: 18px 14px;
+    }
+
+    .formularioBloque {
+        padding: 50px 39px;
+    }
+
+    .boton {
+        width: fit-content;
+        padding: 10px 47px;
+    }
+    
     .presentacionContenedor .container {
         justify-content: center;
     }
@@ -223,7 +244,7 @@ dialog img {
     }
     
     .inputContenedor .campoTexto {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .select select {
@@ -237,11 +258,6 @@ dialog img {
 
 @media screen and (min-width: 1200px) {
     .formularioInfo p {
-        font-size: 18px;
-    }
-    
-    .inputContenedor .campoTexto {
-        font-weight: 600;
         font-size: 18px;
     }
 
