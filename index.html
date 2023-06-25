@@ -14,13 +14,48 @@
     <!-- navbar -->
     <header>
         <nav>
-            <div id="desktop" class="container">
+            <!-- <div id="desktop" class="container">
                 <img src="../recursos/imagenes/Logo.png" alt="" class="logo">
                 <img src="../recursos/iconos/menu.png" alt="" class="menu">
+            </div> -->
+            <!-- NAVBAR MOBILE -->
+            <div class="containerMobileButtom">
+                <a href="./index.html"><img src="../recursos/imagenes/Logo.png" alt="" class="logo"></a>
+                <!-- <button >abrir</button> -->
+                <img id="btn-abrir-hamburguesa" src="../recursos/iconos/menu.png" alt="" class="menu">
+                <div id="menu-hamburguesa" class="contenedorUlMobile ">
+                    <div class="posicionBtnCerrar">
+                        <svg id="btn-cerrar-hamburguesa" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.6406 2.70312L14.3438 12L23.6406 21.2969L21.2969 23.6406L12 14.3438L2.70312 23.6406L0.359375 21.2969L9.65625 12L0.359375 2.70312L2.70312 0.359375L12 9.65625L21.2969 0.359375L23.6406 2.70312Z"
+                                fill="white" />
+                        </svg>
+                        <!-- <button id="btn-cerrar-hamburguesa">cerrar</button> -->
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./html/nosotros.html">Nosotros</a></li>
+                        <li><a href="./html/noticias.html">Noticias</a></li>
+                        <li><a href="#selectorCategoria">Galeria</a></li>
+                        <li><a href="/html/contacto.html">Contacto</a></li>
+                        <li><a href="./html/descargas.html">Descargas</a></li>
+                        <li><a href="./html/donaciones.html">Donaciones</a></li>
+                    </ul>
+                    <div class="redesNavBar">
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100087150974162"><img
+                                src="./recursos/iconos/facebook.png" alt=""></a>
+                        <a target="_blank" href="https://twitter.com/PTacuarita"><img
+                                src="./recursos/iconos/twitter.png" alt=""></a>
+                        <a target="_blank" href="https://www.instagram.com/proyecto.tacuarita/"><img
+                                src="./recursos/iconos/instagram.png" alt=""></a>
+                    </div>
+                </div>
             </div>
+            <!-- NAVBAR DESKTOP -->
             <div id="mobile" class="container">
                 <div class="items">
-                    <img src="../recursos/imagenes/Logo.png" alt="" class="logo">
+                    <a href="./index.html"><img src="../recursos/imagenes/Logo.png" alt="" class="logo"></a>
                     <ul>
                         <li><a href="../index.html">Inicio</a></li>
                         <li><a href="./html/nosotros.html">Nosotros</a></li>
@@ -42,7 +77,7 @@
                 <div class="margenTitulo">
                     <h1>Una Tacuarita</h1>
                     <p>en la ciudad de Córdoba</p>
-                    <button class="blockButtomHome"><a href=""></a>Forma parte</button>
+                    <span class="textoHeadDesktop">Plantá nativas cosechá aves.</span>
                 </div>
                 <div>
                     <!-- <h1>Una Tacuarita</h1>
@@ -77,9 +112,9 @@
         </div>
 
 
-        <div class="imgProblemaDesktop" alt="">
+        <!-- <div class="imgProblemaDesktop" alt=""> -->
 
-        </div>
+    </div>
     </div>
     <div class="imgProblema " alt=""></div>
     <!-- box problema y solucion desktop -->
@@ -132,9 +167,9 @@
     <!-- box corredor biologico -->
     <div class="boxCorredorPadre container">
         <div class="boxCorredor">
-            <h3 class="textoCorredor">Estrategia: Corredor biológico</h3>
-            <a href="./html/corredor.html" class="botonCorredorMobile"><button class="buttomHome">Corredor biológico</button></a>
-            <a href="./html/corredor.html" class="botonCorredorVer"><button class="buttomHome">Ver</button></a>
+            <h3 class="textoCorredor">Corredor biológico</h3>
+            <a href="./html/corredor.html" class="botonCorredorMobile"><button class="buttomHome">Ver
+                    corredor</button></a>
         </div>
     </div>
     <!-- box area del proyecto -->
@@ -148,10 +183,10 @@
         <div class="contenedorAreasProye">
             <div class="botonAreasProye">
                 <button class="buttomProye" id="btn-abrir-relevamiento">Relevamiento</button>
-                <button class="buttomProye" id="btn-abrir-recoleccion">Reccoleccion</button>
+                <button class="buttomProye" id="btn-abrir-plantines">Plantines</button>
             </div>
             <div class="botonAreasProye">
-                <button class="buttomProye" id="btn-abrir-plantines">Plantines</button>
+                <button class="buttomProye" id="btn-abrir-recoleccion">Recolección</button>
                 <button class="buttomProye" id="btn-abrir-plantacion"> Plantación</button>
             </div>
         </div>
@@ -212,22 +247,69 @@
     <div class="boxSePartePadre">
         <div class="boxSeParte">
             <h3>¿Querés ser parte de Proyecto Tacuarita?</h3>
-            <button class="buttomHome">Sé parte</button>
+            <a href="./html/contacto.html"><button class="buttomHome botonMobilSeparte">Sé parte</button></a>
+            <a href="./html/contacto.html"><button class="buttomHome botonDesktopSeparte">Ser parte</button></a>
         </div>
     </div>
     <!-- fin box se parte -->
     <!-- Galeria de imagenes -->
     <div class="boxGaleria container">
         <h3>Galería</h3>
-        <p>Te mostramos las especies de flora nativa de Córdoba</p>
+        <p>Explora las especies de flora nativa cordobesa.</p>
         <select name="" id="selectorCategoria">
             <option value="0" selected disabled>Selecciona especie</option>
             <option value="1" class="btnCategoria">Chañar</option>
             <option value="2" class="btnCategoria">Durazno de Campo</option>
+            <option value="3" class="btnCategoria">Algarrobo blanco alba</option>
+            <option value="4" class="btnCategoria">Espinillo Caven</option>
+            <option value="5" class="btnCategoria">Lagaña de perro</option>
+            <option value="6" class="btnCategoria">Manzano de campo</option>
+            <option value="7" class="btnCategoria">Molle</option>
+            <option value="8" class="btnCategoria">Moradillo</option>
+            <option value="9" class="btnCategoria">Pichanilla</option>
+            <option value="10" class="btnCategoria">Quebracho blanco</option>
+            <option value="11" class="btnCategoria">Sacha Guasca</option>
+            <option value="12" class="btnCategoria">Sen de campo</option>
+            <option value="13" class="btnCategoria">Tala</option>
+            <option value="14" class="btnCategoria">Tumiñico</option>
+            <option value="15" class="btnCategoria">Tusca</option>
         </select>
         <div class="contenedorPadreImagenes">
 
         </div>
+    </div>
+    <!-- Footer -->
+    <div class="lineaSeparadora container"></div>
+    <footer class="container">
+        <div class="logoFooter">
+            <img src="./recursos/imagenes/Logo.png" alt="">
+            <p>© 2023 tacuarita.com
+            </p>
+            <p>Todos los derechos reservados</p>
+        </div>
+        <div class="pregFrecuentes">
+            <h3>Sobre Tacuarita</h3>
+            <a href="./html/preguntas-frecuentes.html">Preguntas frecuentes</a>
+        </div>
+        <div class="contactoFooter">
+            <h3>Contacto</h3>
+            <p>Escribinos a </p>
+            <p>proyectotacuarita@gmail.com</p>
+        </div>
+        <div class="redesFooter">
+            <h3>Seguinos en las redes</h3>
+            <div class="boxIconosRedes">
+                <a href="https://www.facebook.com/profile.php?id=100087150974162" class="face" target="_blank"><img
+                        class="face" src="./recursos/iconos/facebook.png" alt=""></a>
+                <a href="https://twitter.com/PTacuarita" target="_blank" class="twit"><img class="twit"
+                        src="./recursos/iconos/twitter.png" alt=""></a>
+                <a href="https://www.instagram.com/proyecto.tacuarita/" target="_blank" class="insta"><img
+                        src="./recursos/iconos/instagram.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <div class="pieFooter">
+        <p>Diseñado  por team Coderhouse Top 10</p>
     </div>
     <!-- fin galeria de imagenes -->
     <!-- MODALES AREAS DEL PROYECTO -->
@@ -315,6 +397,7 @@
     </dialog>
     <script src="./js/galeria.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/navbarMobile.js"></script>
 </body>
 
 </html>

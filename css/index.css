@@ -31,6 +31,7 @@ height: 100%;
    margin-bottom: 70px;
 }
 
+
 .textoEncabezado h1{
    color: white;
    font-family: var(--fontTitulo);
@@ -47,8 +48,9 @@ height: 100%;
    line-height: 35.45px;
    font-weight: 400;
    padding-right: 0px;
+   margin-bottom: 40px;
 }
-.blockButtomHome{
+/* .blockButtomHome{
    display: none;
    background-color: var(--verdeAgua);
    border: none;
@@ -57,12 +59,24 @@ height: 100%;
    height: 40px;
    color: white;
 }
+
 .blockButtomHome a{
    font-family: var(--fontSecundaria);
    font-size: 16px;
    line-height: 20px;
    align-items: center;
+} */
+
+.textoHeadDesktop{
+   display: none;
+   font-size: 28px;
+   color: white;
+   font-family: var(--fontSecundaria);
+   line-height: 38px;
+   font-weight: 400; 
+   opacity: 0.8;
 }
+
 
 .buttomHome{
    background-color: var(--verdeAgua);
@@ -116,14 +130,14 @@ height: 100%;
 }
 .imgdos{
 
-   background-image: linear-gradient(90deg, rgba(2,51,46,0.70) 0% , rgba(2,51,46,0) 70%), url(/recursos/imagenes/DSC_0091\ .JPG);
+   background-image: linear-gradient(90deg, rgba(2,51,46,0.70) 0% , rgba(2,51,46,0) 70%), url(/recursos/imagenes/DSCN3534.JPG);
    background-position: 30%;
    background-size: cover;
    background-repeat: no-repeat;  
 }
 .imgtres{
 
-   background-image: linear-gradient(90deg, rgba(2,51,46,0.70) 0% , rgba(2,51,46,0) 70%), url(/recursos/imagenes/DSC_0106.JPG);
+   background-image: linear-gradient(90deg, rgba(2,51,46,0.70) 0% , rgba(2,51,46,0) 70%), url(/recursos/imagenes/DSCN3590.JPG);
    background-position: 30%;
    background-size: cover;
    background-repeat: no-repeat;  
@@ -163,7 +177,7 @@ height: 100%;
 }
 .textoProblema{
    background-color: rgb(255, 255, 255);
-   margin-top: 94px;
+   margin-top: 50px;
    margin-bottom: 50px;
    width: 100%;
    border-radius: var(--borderRadius);
@@ -189,18 +203,18 @@ height: 100%;
 }
 .imgProblema{
    width: 100%;
-   height: 220px;
+   height: 284px;
    background-image : url(../recursos/imagenes/Tipas-Cañada.jpg);
    background-size: cover;
    background-repeat: no-repeat;
    background-position:  100%;
-   margin-top: -160px;
+   margin-top: -250px;
    z-index: 0;
 }
-.imgProblemaDesktop{
+/* .imgProblemaDesktop{
    display: none;
    width: 100%;
-}
+} */
 .imgProblemaDesktop img{
    width: 100%;
    border-radius: var(--borderRadius);
@@ -320,12 +334,12 @@ height: 100%;
 }
 .imgSolucion{
    width: 100%;
-   height: 220px;
+   height: 284px;
    background-image : url(../recursos/imagenes/problema.JPG);
    background-size: cover;
    background-repeat: no-repeat;
    background-position:  100%;
-   margin-top: -160px;
+   margin-top: -200px;
    z-index: 0;
 }
 
@@ -352,15 +366,17 @@ height: 100%;
    background-repeat: no-repeat;
    background-position:  100%;
    width: 100%;
+   gap: 20px;
    border-radius: var(--borderRadius);
    height: 100%
 }
 .textoCorredor{
    color: white;
-   display: none;
-}
-.botonCorredorVer{
-   display: none;
+   margin-top: 0px;
+   font-family: var(--fontSecundaria);
+   font-size: 18px;
+   line-height: 20px;
+   font-weight: 400;
 }
 
 .boxCorredor button{
@@ -369,7 +385,7 @@ height: 100%;
    margin: 0px;
    color: white;
    font-family: var(--fontSecundaria);
-   font-style: 16px;
+   font-size: 14px;
    line-height: 20px;
    text-align: center;
 }
@@ -392,16 +408,20 @@ height: 100%;
    display: flex;
    width: 100%;
    justify-content: center;
+   flex-direction: column;
 }
 .textoAreasProyectos p {
-   display: none;
+   margin-bottom: 22px;
+   font-size: 14px;
+   font-family: var(--fontSecundaria);
+   line-height: 19px;
 }
 .areaProyecto h2{
    font-family: var(--fontSecundaria);
    font-weight: 800;
    font-size: 22px;
    line-height: 20px;
-   margin-bottom: 26px;
+   margin-bottom: 19px;
    color: var(--textoAzul);
 }
 
@@ -410,7 +430,7 @@ height: 100%;
    flex-direction: row;
    align-items: center;
    justify-content: center;
-   width: 90%;
+   width: 100%;
    gap: 20px;
 }
 
@@ -436,7 +456,7 @@ height: 100%;
    font-family: var(--fontSecundaria);
    line-height: 20px;
    text-align: center;
-   
+   font-size: 16px;
 }
 
 
@@ -497,6 +517,7 @@ height: 100%;
 }
 #modalAreas::backdrop {
    background-color: rgba(15, 9, 9, 0.5);
+   backdrop-filter: blur(20px);
 }
 /* modal Plantines */
 
@@ -534,7 +555,12 @@ height: 100%;
 
 #modalPlantines::backdrop {
    background-color: rgba(15, 9, 9, 0.5);
+   backdrop-filter: blur(20px);
 }
+#modalPlantines button{
+   margin-top: -8px;
+}
+
 
 /* modal Recoleccion */
 
@@ -573,6 +599,7 @@ height: 100%;
 
 #modalRecoleccion::backdrop {
    background-color: rgba(15, 9, 9, 0.5);
+   backdrop-filter: blur(20px);
 }
 
 /* MODAL PLANTACION */
@@ -612,6 +639,10 @@ height: 100%;
 
 #modalPlantacion::backdrop {
    background-color: rgba(15, 9, 9, 0.5);
+   backdrop-filter: blur(20px);
+}
+#modalPlantacion button{
+   margin-top: -5px;
 }
 
 /* desktop areas proyectos */
@@ -704,9 +735,16 @@ height: 100%;
    margin: 0px;
    color: white;
    font-family: var(--fontSecundaria);
-   font-style: 16px;
+   font-size: 16px;
    line-height: 20px;
    text-align: center;
+}
+
+.botonDesktopSeparte{
+   display: none;
+}
+.botonMobilSeparte{
+   display: block;
 }
 
 
@@ -714,7 +752,7 @@ height: 100%;
 .boxGaleria{
    display: flex;
    flex-direction: column;
-   align-items: center;
+   align-items: start;
    justify-content: center;
    margin-top: 40px; 
 }
@@ -727,20 +765,22 @@ height: 100%;
 
 }
 .boxGaleria p{
-   display: none;
+   font-size: 14px;
    font-family: var(--fontSecundaria);
-   font-weight: 18px;
-   line-height: 25px;
+   font-weight: 500px;
+   line-height: 19px;
    margin-top: 16px;
    color: var(--textoAzul);
-   margin-left: 50px;
+   margin-left: 0px;
 }
 .boxGaleria select{
    margin-top: 20px;
    margin-bottom: 40px;
    border-radius: 20px;
    padding: 5px;
-   
+   color: var(--textoAzul);
+   font-size: 16px;
+   font-family: var(--fontSecundaria);
 }
 
 .contenedorPadreImagenes{
@@ -751,7 +791,7 @@ height: 100%;
    justify-content: center;
 }
 .imagenGaleria{
-   width: 45%;
+   width: 100%;
    
 }
 .tamanoImgGaleria{
@@ -784,7 +824,7 @@ height: 100%;
    }
 
 
-   .blockButtomHome{
+   /* .blockButtomHome{
       display: block;
       background-color: white;
       border: none;
@@ -798,7 +838,7 @@ height: 100%;
       line-height: 22px;
       font-size: 16px;
       align-items: center;
-   }
+   } */
   
    .textoEncabezado{
       position: absolute;
@@ -827,6 +867,10 @@ height: 100%;
          line-height: 61px;
          padding-right: 0px;
         
+      }
+
+      .textoHeadDesktop{
+         display: block;
       }
 
       .slider-nav {
@@ -887,16 +931,14 @@ height: 100%;
    margin-bottom: 0px;
    color: white;
    font-family: var(--fontSecundaria);
-   font-style: 16px;
+   font-size: 16px;
    line-height: 20px;
    text-align: center;
 }
-.botonCorredorVer{
-   display: block;
-}
+
 
 .botonCorredorMobile{
-   display: none;
+   display: block;
 }
 
 
@@ -911,7 +953,7 @@ height: 100%;
 .areaProyecto h2{
    font-family: var(--fontSecundaria);
    font-weight: 800;
-   font-size: 22px;
+   font-size: 28px;
    line-height: 20px;
    margin-bottom: 23px;
    color: var(--textoAzul);
@@ -922,7 +964,6 @@ height: 100%;
    justify-content: center;
 }
 .textoAreasProyectos p {
-   display: block;
    margin-bottom: 80px;
    font-family: var(--fontSecundaria);
    color: black;
@@ -958,14 +999,14 @@ height: 100%;
    background-position:  100%;
    width: 100%;
    height: 100%;
-   gap: 43px;
+   gap: 20px;
 }
 .boxSeParte button{
    /* margin-top: 43px;
    margin-bottom: 100px; */
    color: white;
    font-family: var(--fontSecundaria);
-   font-style: 16px;
+   font-size: 16px;
    line-height: 20px;
    text-align: center;
    margin:0;
@@ -986,18 +1027,26 @@ height: 100%;
    width: 140px;
    height: 44px;
 }
+
+.botonDesktopSeparte{
+   display: block;
+}
+.botonMobilSeparte{
+   display: none;
+}
 /* galeria */
 .boxGaleria{
    flex-direction: column;
    align-items: start;
    justify-content: start;
    margin-top: 96px; 
+   margin-bottom: 200px;
    width: 100%;
 }
 .boxGaleria h3{
    font-family: var(--fontSecundaria);
    font-weight: 700;
-   font-size: 36px;
+   font-size: 28px;
    line-height: 30px;
    color: var(--textoAzul);
    margin-left: 45px;
@@ -1174,7 +1223,7 @@ height: 100%;
    width: 100%;
 }
 .boxGaleria h3{
-   font-size: 36px;
+   font-size: 28px;
    margin-left: 0px;
 
 }
@@ -1182,11 +1231,14 @@ height: 100%;
 .boxGaleria p{
    display: block;
    margin-left: 0px;
+   font-size: 18px;
 }
 .boxGaleria select{
    margin-top: 20px;
    margin-left: 0px;
-   width: 180px;
+   width: 365px;
+   height: 50px;
+   padding-left: 20px;
 }
 
 .contenedorPadreImagenes{

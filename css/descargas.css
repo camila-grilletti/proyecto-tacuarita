@@ -225,7 +225,8 @@ dialog h2 {
 
 @media screen and (min-width: 890px) {
     .descargas {
-        margin: 96px 0;
+        margin-top: 96px;
+        margin-bottom: 300px;
         gap: 40px;
     }
 

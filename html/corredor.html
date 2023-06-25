@@ -14,13 +14,43 @@
 
     <header>
         <nav>
-            <div id="desktop" class="container">
-                <img src="../recursos/imagenes/Logo.png" alt="" class="logo">
-                <img src="../recursos/iconos/menu.png" alt="" class="menu">
+            <!-- mobile navbar -->
+            <div class="containerMobileButtom">
+                <a href="../index.html"><img src="../recursos/imagenes/Logo.png" alt="" class="logo"></a>
+                <!-- <button >abrir</button> -->
+                <img id="btn-abrir-hamburguesa" src="../recursos/iconos/menu.png" alt="" class="menu">
+                <div id="menu-hamburguesa" class="contenedorUlMobile ">
+                    <div class="posicionBtnCerrar">
+                        <svg id="btn-cerrar-hamburguesa" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.6406 2.70312L14.3438 12L23.6406 21.2969L21.2969 23.6406L12 14.3438L2.70312 23.6406L0.359375 21.2969L9.65625 12L0.359375 2.70312L2.70312 0.359375L12 9.65625L21.2969 0.359375L23.6406 2.70312Z"
+                                fill="white" />
+                        </svg>
+                        <!-- <button id="btn-cerrar-hamburguesa">cerrar</button> -->
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="./noticias.html">Noticias</a></li>
+                        <li><a href="/html/contacto.html">Contacto</a></li>
+                        <li><a href="./descargas.html">Descargas</a></li>
+                        <li><a href="./donaciones.html">Donaciones</a></li>
+                    </ul>
+                    <div class="redesNavBar">
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100087150974162"><img
+                                src="../recursos/iconos/facebook.png" alt=""></a>
+                        <a target="_blank" href="https://twitter.com/PTacuarita"><img
+                                src="../recursos/iconos/twitter.png" alt=""></a>
+                        <a target="_blank" href="https://www.instagram.com/proyecto.tacuarita/"><img
+                                src="../recursos/iconos/instagram.png" alt=""></a>
+                    </div>
+                </div>
             </div>
+            <!-- mobile navbar fin -->
             <div id="mobile" class="container">
                 <div class="items">
-                    <img src="../recursos/imagenes/Logo.png" alt="" class="logo">
+                    <a href="../index.html"><img src="../recursos/imagenes/Logo.png" alt="" class="logo"></a>
                     <ul>
                         <li><a href="../index.html">Inicio</a></li>
                         <li><a href="./nosotros.html">Nosotros</a></li>
@@ -44,26 +74,58 @@
     </section>
     <div class="boxQueEsUnCorredor container">
         <h2>¿Qué es un corredor?</h2>
-        <p>Los corredores biológicos son áreas, generalmente alargadas, que conectan dos o más áreas protegidas
-            existentes (parques nacionales, reservas biológicas)
-            o los remanentes de los ecosistemas originales. Mantienen la conectividad entre las mismas, mediante
-            actividades productivas en el paisaje intermedio que permiten el flujo de las especies y evitan su
-            aislamiento.</p>
+        <p>Los corredores biológicos son áreas generalmente alargadas que conectan dos o más áreas protegidas
+            existentes, como parques nacionales o reservas biológicas, o los remanentes de los ecosistemas originales.
+            Estos corredores mantienen la conectividad entre las áreas protegidas mediante actividades productivas en el
+            paisaje intermedio, lo que permite el flujo de las especies y evita su aislamiento.</p>
         <img src="../recursos/imagenes/corredorbiologico.jpg" alt="imagen de mapa del corredor biologico">
-        <p>Muchas especies de aves pueden ser avistadas normalmente en él, con mayor frecuencia
-            en zonas con mayor cantidad de árboles. Sin embargo, este no es el caso de todas las especies nativas
-            habitantes de las ecorregiones de Espinal y Chaco Serrano en donde se sitúa la ciudad, las cuales no están
-            presentes y no se las observa.
+        <p>La ciudad de Córdoba se encuentra en el faldeo oriental de las Sierras Chicas, una zona de transición entre
+            las ecorregiones del Chaco seco y el Espinal, y es atravesada por el Río Suquía. Dentro de la zona urbana,
+            hay varios espacios verdes con diferentes grados de conservación: al noroeste se encuentra la Reserva
+            Natural Urbana San Martín y el Jardín Botánico; al norte, el Parque de las Naciones y el Autóctono; hacia el
+            sur, el Parque Sarmiento y la Ciudad Universitaria, junto con algunos restos de áreas verdes. Todos estos
+            lugares están conectados por el río Suquía.
         </p>
         <p class="intesidadTexto">
-            <span class="intesidadTexto"> Es por esto que Proyecto Tacuarita pretende potenciar la funcionalidad del río como corredor biológico a
-                través de la plantación de flora nativa en sus márgenes y cercanías, favoreciendo la interacción de las
-                especies de fauna que habitan en estas áreas a lo largo de toda la Ciudad. Esta conexión de los espacios
-                verdes permite al ecosistema nativo de Córdoba coexistir con los espacios urbanos y a la fauna desplazarse a
-                lo largo de toda esta región, logrando avistar una biodiversidad más amplia y enriquecida.</span>
+            <span class="intesidadTexto">  Es por esto que desde Proyecto Tacuarita pretendemos conectar los parches de biodiversidad que la ciudad
+                conserva, generando un hilo conector que favorezca las interacciones entre la flora y fauna urbanas. Esta
+                conexión permitirá fortalecer los ecosistemas nativos de Córdoba, favoreciendo la circulación de la fauna
+                nativa, el enriquecimiento de la biodiversidad y el avistamiento de especies hoy ausentes en el Suquía.</span>
         </p>
     </div>
-
+    <div class="lineaSeparadora container"></div>
+    <footer class="container">
+        <div class="logoFooter">
+            <img src="../recursos/imagenes/Logo.png" alt="">
+            <p>© 2023 tacuarita.com
+            </p>
+            <p>Todos los derechos reservados</p>
+        </div>
+        <div class="pregFrecuentes">
+            <h3>Sobre Tacuarita</h3>
+            <a href="../html/preguntas-frecuentes.html">Preguntas frecuentes</a>
+        </div>
+        <div class="contactoFooter">
+            <h3>Contacto</h3>
+            <p>Escribinos a </p>
+            <p>proyectotacuarita@gmail.com</p>
+        </div>
+        <div class="redesFooter">
+            <h3>Seguinos en las redes</h3>
+            <div class="boxIconosRedes">
+                <a href="https://www.facebook.com/profile.php?id=100087150974162" class="face" target="_blank"><img
+                        class="face" src="../recursos/iconos/facebook.png" alt=""></a>
+                <a href="https://twitter.com/PTacuarita" target="_blank" class="twit"><img class="twit"
+                        src="../recursos/iconos/twitter.png" alt=""></a>
+                <a href="https://www.instagram.com/proyecto.tacuarita/" target="_blank" class="insta"><img
+                        src="../recursos/iconos/instagram.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <div class="pieFooter">
+        <p>Diseñado con por team Coderhouse Top 10</p>
+    </div>
+    <script src="../js/navbarMobile.js"></script>
 </body>
 
 </html>

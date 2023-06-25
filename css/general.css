@@ -3,7 +3,11 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -12,7 +16,6 @@
     --degradado: #02332E;
     --degradadoCompleto: linear-gradient(93.58deg, rgba(2, 51, 46, 0.79) 2.95%, rgba(0, 0, 0, 0) 97.05%);
     --verdeAgua: #49A68B;
-    --degradadoCompleto: linear-gradient(93.58deg, rgba(2, 51, 46, 0.79) 2.95%, rgba(0, 0, 0, 0) 97.05%);
     --fondo: #F6FFFC;
     --colorIndicadorNav: #47CEA7;
     --colorTextoFooter: #2C2C2C;
@@ -89,12 +92,169 @@ nav .logo {
 nav .menu {
     width: 30px;
     height: 20px;
+    cursor: pointer;
 }
 
 #mobile {
     display: none;
 }
 
+
+/* Menu hamburguesa */
+
+.containerMobileButtom{
+    position: var(--posicion,static);
+    top: 0;
+    padding:var(--paddingY,0 5%);
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:var(--margenSuperior,30px);
+    background: none;
+    
+}
+
+.movible{
+    --posicion: fixed;
+    --margenSuperior:0; 
+    --paddingY:5% 5%; 
+    background: rgb(52,52,56);
+    background: linear-gradient(180deg, rgba(52,52,56,1) 0%, rgba(52,52,56,0) 100%);
+}
+
+.contenedorUlMobile{
+position: fixed;
+top: 0;
+right: 0;
+width: 251px;
+min-height: 100vh;
+background: linear-gradient(183.42deg, #2A5E58 2.48%, #1C403C 100%);
+
+padding: 1rem;
+box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+display: flex;
+flex-direction: column;
+align-items: start;
+gap: 1rem;
+opacity: 0;
+visibility: hidden;
+}
+
+.posicionBtnCerrar{
+    margin-top: 27px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+}
+
+.contenedorUlMobile.visible{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease;
+}    
+
+.nav-list{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: start;
+    margin-top:50px;
+    padding-left: 10px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--fontSecundaria);
+    font-size: 22px;
+    cursor: pointer;
+    line-height: 30px;
+}
+
+.redesNavBar{
+   position: absolute;
+    bottom: 30px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+.redesNavBar img{
+    width: 20px;
+}
+
+/* footer */
+footer {
+    margin-top: 50px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+footer a{
+    font-family: var(--fontSecundaria);
+    font-size: 13px;
+    line-height: 17.73px;
+    text-decoration: underline;
+    color: black;
+}
+footer img{
+   width: 67px;
+}
+/* footer a img{
+    width: 20px;
+} */
+.redesFooter{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+}
+.face img{
+    width: 25px;
+}
+.twit img{
+    width: 25px;
+}
+.insta img {
+    width: 25px;
+}
+.pieFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 39px;
+    color: white;
+    font-family: var(--fontSecundaria);
+    text-align: center;
+    font-size: 10px;
+}
+.logoFooter p{
+    display: none;
+}
+.pregFrecuentes h3{
+   display: none;
+}
+.contactoFooter{
+    display: none;
+}
+.redesFooter h3{
+    display: none;
+}
+.lineaSeparadora{
+    display: none;
+}
 /* ----- Responsive ----- */
 
 @media screen and (min-width: 720px) {
@@ -104,7 +264,8 @@ nav .menu {
 }
 
 @media screen and (min-width: 890px) {
-    #desktop {
+    
+    .containerMobileButtom{
         display: none;
     }
 
@@ -122,6 +283,12 @@ nav .menu {
 
     nav {
         background-color: rgba(255, 255, 255, 0.95);
+    }
+
+    nav .logo {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
     }
 
     .items, .items ul {
@@ -168,6 +335,105 @@ nav .menu {
     .items li:hover {
         border-bottom: 2px solid var(--colorIndicadorNav);
     }
+
+    /* footer desktop */
+    .lineaSeparadora{
+        display: block;
+        border-top: 1px solid #919191;
+        height: 1px;;
+        width: 100%;
+        padding: 0;
+        margin:0px auto 0 auto;
+    }
+    footer img{
+        width: 48px;
+     }
+     .logoFooter {
+         height: 117px;
+     }
+    .logoFooter p{
+        display: block;
+    }
+    .pregFrecuentes h3{
+       display: block;
+       font-family: var(--fontSecundaria);
+       font-size: 16px;
+       font-weight: 700;
+       line-height: 24px;
+    }
+    .pregFrecuentes a{
+        font-size: 16px;
+        text-decoration: none;
+    }
+    .contactoFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        height: 117px;
+        gap: 10px; 
+    }
+    .contactoFooter h3{
+    font-family: var(--fontSecundaria);
+       font-size: 16px;
+       font-weight: 700;
+       line-height: 24px;
+    }
+    .contactoFooter p{
+        font-size: 16px;
+        text-decoration: none;
+    }
+    .redesFooter h3{
+        display: block;
+        font-family: var(--fontSecundaria);
+       font-size: 16px;
+       font-weight: 700;
+       line-height: 24px;
+    }
+    .redesFooter{
+        flex-direction: column;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        height: 117px;
+        gap: 10px;
+        margin-right: 120px;
+    }
+    .boxIconosRedes{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    .face img{
+        width: 40px;
+    }
+    .twit img{
+        width: 40px;
+    }
+    .insta img {
+        width: 40px;
+    }
+    footer {
+        margin-top: 0px;
+        padding-bottom: 100px;
+       padding-top: 50px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+    }
+    .pregFrecuentes{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        height: 117px;
+        gap: 10px;
+    }
+    
+    .pieFooter{
+        display: none;
+    }
+
 }
 
 @media screen and (min-width: 980px) {

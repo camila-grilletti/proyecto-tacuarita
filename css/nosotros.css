@@ -169,7 +169,8 @@
     }
 
     .nosotros {
-        margin: 140px 0;
+        margin-top: 140px;
+        margin-bottom: 300px;
         gap: 140px;
     }
 }

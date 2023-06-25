@@ -40,8 +40,9 @@
 
 /* TWITTER */
 
-.jorgitoxx{
-margin-top: 50px;
+.twitterContenedor{
+margin-top: 150px;
+margin-bottom: 100px;
 border-radius: var(--borderRadius);
 justify-content: center;
 display: flex;
@@ -53,7 +54,7 @@ box-shadow: var(--boxShadow1);
 
 
 /* bloque que es un corredor */
-.boxQueEsUnCorredor{
+/* .boxQueEsUnCorredor{
 color: var(--textoAzul);
 font-family: var(--fontSecundaria);
 margin-top: 40px;
@@ -85,7 +86,7 @@ flex-direction: column;
 .intesidadTexto{
 margin-top: 20px;
 font-weight: 800;
-}
+} */
 
 @media screen and (min-width: 890px){
     
@@ -93,6 +94,10 @@ font-weight: 800;
     .presentacionContenedor .container {
         justify-content: center;
     }
+
+    .twitterContenedor{
+        margin-bottom: 300px;
+        }
     
     /* bloque que es un corredor Desktop
     .boxQueEsUnCorredor{

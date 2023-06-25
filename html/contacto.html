@@ -13,9 +13,37 @@
 <body>
     <header>
         <nav>
-            <div id="desktop" class="container">
-                <img src="../recursos/imagenes/Logo.png" alt="" class="logo">
-                <img src="../recursos/iconos/menu.png" alt="" class="menu">
+            <div class="containerMobileButtom">
+                <a href="../index.html"><img src="../recursos/imagenes/Logo.png" alt="" class="logo"></a>
+                <!-- <button >abrir</button> -->
+                <img id="btn-abrir-hamburguesa" src="../recursos/iconos/menu.png" alt="" class="menu">
+                <div id="menu-hamburguesa" class="contenedorUlMobile ">
+                    <div class="posicionBtnCerrar">
+                        <svg id="btn-cerrar-hamburguesa" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.6406 2.70312L14.3438 12L23.6406 21.2969L21.2969 23.6406L12 14.3438L2.70312 23.6406L0.359375 21.2969L9.65625 12L0.359375 2.70312L2.70312 0.359375L12 9.65625L21.2969 0.359375L23.6406 2.70312Z"
+                                fill="white" />
+                        </svg>
+                        <!-- <button id="btn-cerrar-hamburguesa">cerrar</button> -->
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="./noticias.html">Noticias</a></li>
+                        <li><a href="/html/contacto.html">Contacto</a></li>
+                        <li><a href="./descargas.html">Descargas</a></li>
+                        <li><a href="./donaciones.html">Donaciones</a></li>
+                    </ul>
+                    <div class="redesNavBar">
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100087150974162"><img
+                                src="../recursos/iconos/facebook.png" alt=""></a>
+                        <a target="_blank" href="https://twitter.com/PTacuarita"><img
+                                src="../recursos/iconos/twitter.png" alt=""></a>
+                        <a target="_blank" href="https://www.instagram.com/proyecto.tacuarita/"><img
+                                src="../recursos/iconos/instagram.png" alt=""></a>
+                    </div>
+                </div>
             </div>
             <div id="mobile" class="container">
                 <div class="items">
@@ -72,6 +100,38 @@
             </div>
         </div>
     </section>
+    <div class="lineaSeparadora container"></div>
+    <footer class="container">
+        <div class="logoFooter">
+            <img src="../recursos/imagenes/Logo.png" alt="">
+            <p>© 2023 tacuarita.com
+            </p>
+            <p>Todos los derechos reservados</p>
+        </div>
+        <div class="pregFrecuentes">
+            <h3>Sobre Tacuarita</h3>
+            <a href="../html/preguntas-frecuentes.html">Preguntas frecuentes</a>
+        </div>
+        <div class="contactoFooter">
+            <h3>Contacto</h3>
+            <p>Escribinos a </p>
+            <p>proyectotacuarita@gmail.com</p>
+        </div>
+        <div class="redesFooter">
+            <h3>Seguinos en las redes</h3>
+            <div class="boxIconosRedes">
+                <a href="https://www.facebook.com/profile.php?id=100087150974162" class="face" target="_blank"><img
+                        class="face" src="../recursos/iconos/facebook.png" alt=""></a>
+                <a href="https://twitter.com/PTacuarita" target="_blank" class="twit"><img class="twit"
+                        src="../recursos/iconos/twitter.png" alt=""></a>
+                <a href="https://www.instagram.com/proyecto.tacuarita/" target="_blank" class="insta"><img
+                        src="../recursos/iconos/instagram.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <div class="pieFooter">
+        <p>Diseñado con por team Coderhouse Top 10</p>
+    </div>
 
     <dialog id="formularioEnviado">
         <div class="contenedorDialog">
@@ -85,6 +145,7 @@
     <script src="../js/contacto.js"></script>
     <script type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="../js/navbarMobile.js"></script>
   
     <script type="text/javascript">
         emailjs.init('78PsTcmbN6QlIrW8-')
