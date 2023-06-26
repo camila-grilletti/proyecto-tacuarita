@@ -274,7 +274,7 @@ height: 100%;
    font-size: 28px;
    line-height: 38px;
    font-weight: 700;
-   color: var(--verdeAgua);
+   color: var(--textoAzul);
 }
 .textoSolucionDesktop p{
    font-family: var(--fontSecundaria);
@@ -309,7 +309,7 @@ height: 100%;
    font-size: 18px;
    line-height: 25px;
    margin-bottom: 14px;
-   color: var(--verdeAgua);
+   color: var(--textoAzul);
 }
 .textoSolucion p{
    font-family: var(--fontSecundaria);
@@ -1122,7 +1122,7 @@ height: 100%;
       font-size: 28px;
       line-height: 38px;
       font-weight: 700;
-      color: var(--verdeAgua);
+      color: var(--textoAzul);
    }
    .textoSolucionDesktop p{
       font-family: var(--fontSecundaria);
