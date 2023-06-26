@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/recursos/imagenes/Logo.png">
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/animete.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Proyecto Tacuarita</title>
 </head>
 
@@ -14,15 +17,13 @@
     <!-- navbar -->
     <header>
         <nav>
-            <!-- <div id="desktop" class="container">
-                <img src="../recursos/imagenes/Logo.png" alt="" class="logo">
-                <img src="../recursos/iconos/menu.png" alt="" class="menu">
-            </div> -->
             <!-- NAVBAR MOBILE -->
             <div class="containerMobileButtom">
-                <a href="./index.html"><img src="../recursos/imagenes/Logo.png" alt="" class="logo"></a>
-                <!-- <button >abrir</button> -->
-                <img id="btn-abrir-hamburguesa" src="../recursos/iconos/menu.png" alt="" class="menu">
+                <a href="./index.html"><img src="../recursos/imagenes/Logo.png" alt="logo de proyecto tacuarita"
+                        class="logo"></a>
+                
+                <img id="btn-abrir-hamburguesa" src="../recursos/iconos/menu.png" alt="logo para acceder al menu mobile"
+                    class="menu">
                 <div id="menu-hamburguesa" class="contenedorUlMobile ">
                     <div class="posicionBtnCerrar">
                         <svg id="btn-cerrar-hamburguesa" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -31,7 +32,7 @@
                                 d="M23.6406 2.70312L14.3438 12L23.6406 21.2969L21.2969 23.6406L12 14.3438L2.70312 23.6406L0.359375 21.2969L9.65625 12L0.359375 2.70312L2.70312 0.359375L12 9.65625L21.2969 0.359375L23.6406 2.70312Z"
                                 fill="white" />
                         </svg>
-                        <!-- <button id="btn-cerrar-hamburguesa">cerrar</button> -->
+                       
                     </div>
                     <ul class="nav-list">
                         <li><a href="../index.html">Inicio</a></li>
@@ -44,18 +45,19 @@
                     </ul>
                     <div class="redesNavBar">
                         <a target="_blank" href="https://www.facebook.com/profile.php?id=100087150974162"><img
-                                src="./recursos/iconos/facebook.png" alt=""></a>
+                                src="./recursos/iconos/facebook.png" alt="icono de facebook"></a>
                         <a target="_blank" href="https://twitter.com/PTacuarita"><img
-                                src="./recursos/iconos/twitter.png" alt=""></a>
+                                src="./recursos/iconos/twitter.png" alt="icono de twitter"></a>
                         <a target="_blank" href="https://www.instagram.com/proyecto.tacuarita/"><img
-                                src="./recursos/iconos/instagram.png" alt=""></a>
+                                src="./recursos/iconos/instagram.png" alt="icono de instagram"></a>
                     </div>
                 </div>
             </div>
             <!-- NAVBAR DESKTOP -->
             <div id="mobile" class="container">
                 <div class="items">
-                    <a href="./index.html"><img src="../recursos/imagenes/Logo.png" alt="" class="logo"></a>
+                    <a href="./index.html"><img src="../recursos/imagenes/Logo.png" alt="logo de proyecto tacuarita"
+                            class="logo"></a>
                     <ul>
                         <li><a href="../index.html">Inicio</a></li>
                         <li><a href="./html/nosotros.html">Nosotros</a></li>
@@ -80,16 +82,13 @@
                     <span class="textoHeadDesktop">Plantá nativas cosechá aves.</span>
                 </div>
                 <div>
-                    <!-- <h1>Una Tacuarita</h1>
-                <p>en la ciudad de Córdoba</p>
-                <button class="blockButtomHome"><a href=""></a>Se parte</button> -->
                 </div>
             </div>
         </div>
         <div class="slider">
-            <div id="slide-1" class="imguno" alt="3D rendering of an imaginary orange planet in space"></div>
-            <div id="slide-2" class="imgdos" alt="3D rendering of an imaginary orange planet in space"></div>
-            <div id="slide-3" class="imgtres" alt="3D rendering of an imaginary orange planet in space"></div>
+            <div id="slide-1" class="imguno" alt="imagen de ave tacuarita en un arbol"></div>
+            <div id="slide-2" class="imgdos" alt="imagen de los miembros del proyecto"></div>
+            <div id="slide-3" class="imgtres" alt="imagen de arboles nativos"></div>
         </div>
         <div class="slider-nav">
             <a href="#slide-1"></a>
@@ -100,7 +99,7 @@
     </section>
     <!-- fin carousel -->
     <!-- box problema y solucion -->
-    <div class="boxProblema container">
+    <div class="boxProblema container wow animate__fadeInLeft" data-wow-delay="0.7s" >
         <div class="textoProblema ">
             <h2>Problema</h2>
             <p>La introducción de especies de flora exótica en la ciudad de Córdoba ha resultado con una predominancia
@@ -112,14 +111,12 @@
         </div>
 
 
-        <!-- <div class="imgProblemaDesktop" alt=""> -->
-
     </div>
     </div>
-    <div class="imgProblema " alt=""></div>
+    <div class="imgProblema " alt="imagen de arboles nativos de la seccion problemas"></div>
     <!-- box problema y solucion desktop -->
     <div class="container">
-        <div class="problemaDesktop">
+        <div class="problemaDesktop wow animate__fadeInLeft" data-wow-delay="0.7s">
             <div class="textoProblemaDesktop">
                 <h3>Problema</h3>
                 <p>La introducción de especies de flora exótica en la ciudad de Córdoba ha resultado con una
@@ -130,10 +127,10 @@
                     afectan incluso a la población.
                 </p>
             </div>
-            <img src="./recursos/imagenes/Tipas-Cañada.jpg" alt="">
+            <img src="./recursos/imagenes/Tipas-Cañada.jpg" alt="imagen de arboles nativos de la seccion problemas">
         </div>
-        <div class="solucionDesktop">
-            <img src="./recursos/imagenes/chañardos.JPG" alt="">
+        <div class="solucionDesktop wow animate__fadeInRight" data-wow-delay="0.7s">
+            <img src="./recursos/imagenes/chañardos.JPG" alt="imagen de flores nativas en el bloque de texto solucion">
             <div class="textoSolucionDesktop">
                 <h3>Solución</h3>
                 <p>La introducción de especies de flora exótica en la ciudad de Córdoba ha resultado con una
@@ -148,7 +145,7 @@
         </div>
     </div>
     <!-- fin box problema  y solucion desktop -->
-    <div class="boxSolucion container">
+    <div class="boxSolucion container wow animate__fadeInRight" data-wow-delay="0.7s" >
         <div class="textoSolucion">
             <h2>Solución</h2>
             <p>La introducción de especies de flora exótica en la ciudad de Córdoba ha resultado con una predominancia
@@ -162,10 +159,10 @@
 
     </div>
     </div>
-    <div class="imgSolucion" alt=""></div>
+    <div class="imgSolucion" alt="imagen de flores nativas en el bloque de texto solucion"></div>
     <!-- fin box problema y solucion -->
     <!-- box corredor biologico -->
-    <div class="boxCorredorPadre container">
+    <div class="boxCorredorPadre container wow animate__fadeIn"data-wow-delay="0.7s">
         <div class="boxCorredor">
             <h3 class="textoCorredor">Corredor biológico</h3>
             <a href="./html/corredor.html" class="botonCorredorMobile"><button class="buttomHome">Ver
@@ -173,7 +170,7 @@
         </div>
     </div>
     <!-- box area del proyecto -->
-    <div class="areaProyecto container">
+    <div class="areaProyecto container wow animate__fadeIn"data-wow-delay="0.8s">
         <div class="textoAreasProyectos">
             <h2>
                 Áreas del proyecto
@@ -193,7 +190,7 @@
         <!-- areas del proyecto desktop -->
         <div class="relevamientoContenedorCards ">
             <div class="relevamientoDesktopPadre">
-                <img src="./recursos/imagenes/relevamiento.JPG" alt="">
+                <img src="./recursos/imagenes/relevamiento.JPG" alt="imagen relacionada a la seccion de relevamiento">
                 <div class="relevamientoDesktop">
                     <h3>Relevamiento</h3>
                     <p>Con la identificación y monitoreo de especies arbóreas nativas en distintos puntos de la ciudad,
@@ -205,7 +202,7 @@
                 </div>
             </div>
             <div class="relevamientoDesktopPadre">
-                <img src="./recursos/imagenes/recoleccion.JPG" alt="">
+                <img src="./recursos/imagenes/recoleccion.JPG" alt="imagen relacionada a la seccion de recoleccion">
                 <div class="relevamientoDesktop">
                     <h3>Reccoleccion</h3>
                     <p>Se realiza en los espacios de la ciudad y en las épocas de maduración determinados gracias al
@@ -216,7 +213,7 @@
                 </div>
             </div>
             <div class="relevamientoDesktopPadre">
-                <img src="./recursos/imagenes/plantinesmin.jpg" alt="">
+                <img src="./recursos/imagenes/plantinesmin.jpg" alt="imagen relacionada a la seccion de plantines">
                 <div class="relevamientoDesktop">
                     <h3>Plantines</h3>
                     <p>En esta etapa, determinamos el método más eficiente y sencillo para germinar las semillas de cada
@@ -228,7 +225,7 @@
                 </div>
             </div>
             <div class="relevamientoDesktopPadre">
-                <img src="./recursos/imagenes//plantacion.JPG" alt="">
+                <img src="./recursos/imagenes//plantacion.JPG" alt="imagen relacionada a la seccion de plantacion">
                 <div class="relevamientoDesktop">
                     <h3>Plantación</h3>
                     <p>Durante la temporada de lluvias (enero-febrero), llega el momento de llevar a tierra nuestros
@@ -244,7 +241,7 @@
     </div>
     <!-- fin box area del proyecto -->
     <!-- box se parte -->
-    <div class="boxSePartePadre">
+    <div class="boxSePartePadre wow animate__fadeIn"data-wow-delay="0.8s">
         <div class="boxSeParte">
             <h3>¿Querés ser parte de Proyecto Tacuarita?</h3>
             <a href="./html/contacto.html"><button class="buttomHome botonMobilSeparte">Sé parte</button></a>
@@ -253,7 +250,7 @@
     </div>
     <!-- fin box se parte -->
     <!-- Galeria de imagenes -->
-    <div class="boxGaleria container">
+    <div class="boxGaleria container wow animate__fadeIn"data-wow-delay="1s">
         <h3>Galería</h3>
         <p>Explora las especies de flora nativa cordobesa.</p>
         <select name="" id="selectorCategoria">
@@ -282,7 +279,7 @@
     <div class="lineaSeparadora container"></div>
     <footer class="container">
         <div class="logoFooter">
-            <img src="./recursos/imagenes/Logo.png" alt="">
+            <img src="./recursos/imagenes/Logo.png" alt="logo de proyecto tacuarita">
             <p>© 2023 tacuarita.com
             </p>
             <p>Todos los derechos reservados</p>
@@ -300,23 +297,23 @@
             <h3>Seguinos en las redes</h3>
             <div class="boxIconosRedes">
                 <a href="https://www.facebook.com/profile.php?id=100087150974162" class="face" target="_blank"><img
-                        class="face" src="./recursos/iconos/facebook.png" alt=""></a>
+                        class="face" src="./recursos/iconos/facebook.png" alt="facebook"></a>
                 <a href="https://twitter.com/PTacuarita" target="_blank" class="twit"><img class="twit"
-                        src="./recursos/iconos/twitter.png" alt=""></a>
+                        src="./recursos/iconos/twitter.png" alt="twitter"></a>
                 <a href="https://www.instagram.com/proyecto.tacuarita/" target="_blank" class="insta"><img
-                        src="./recursos/iconos/instagram.png" alt=""></a>
+                        src="./recursos/iconos/instagram.png" alt="instagram"></a>
             </div>
         </div>
     </footer>
     <div class="pieFooter">
-        <p>Diseñado  por team Coderhouse Top 10</p>
+        <p>Diseñado por team Coderhouse Top 10</p>
     </div>
     <!-- fin galeria de imagenes -->
     <!-- MODALES AREAS DEL PROYECTO -->
     <dialog id="modalAreas">
         <div>
             <div>
-                <img src="./recursos/imagenes/relevamiento.JPG" alt="">
+                <img src="./recursos/imagenes/relevamiento.JPG" alt="imagen relacionada con el area de relevamiento">
             </div>
             <div class="contenidoArea">
                 <div class="tituloArea">
@@ -336,7 +333,7 @@
     <dialog id="modalPlantines">
         <div>
             <div>
-                <img src="./recursos/imagenes/plantinesmin.jpg" alt="">
+                <img src="./recursos/imagenes/plantinesmin.jpg" alt="imagen relacionada con el area de plantines">
             </div>
             <div class="contenidoArea">
                 <div class="tituloArea">
@@ -357,11 +354,11 @@
     <dialog id="modalRecoleccion">
         <div>
             <div>
-                <img src="./recursos/imagenes/recoleccion.JPG" alt="">
+                <img src="./recursos/imagenes/recoleccion.JPG" alt="imagen relacionada con el area de recoleccion">
             </div>
             <div class="contenidoArea">
                 <div class="tituloArea">
-                    <h3>Reccoleccion</h3>
+                    <h3>Recoleccion</h3>
                 </div>
                 <p>Se realiza en los espacios de la ciudad y en las épocas de maduración determinados gracias al
                     relevamiento previo. Involucra el procesamiento y almacenamiento de semillas. En esta área, se actúa
@@ -377,7 +374,7 @@
     <dialog id="modalPlantacion">
         <div>
             <div>
-                <img src="./recursos/imagenes/plantacion.JPG" alt="">
+                <img src="./recursos/imagenes/plantacion.JPG" alt="imagen relacion con la seccion de plantacion">
             </div>
             <div class="contenidoArea">
                 <div class="tituloArea">
@@ -398,6 +395,10 @@
     <script src="./js/galeria.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/navbarMobile.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

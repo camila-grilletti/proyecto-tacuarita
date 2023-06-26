@@ -80,25 +80,3 @@ selectorCategoria.addEventListener('change',(e)=>{
     cargarGaleria(arrayFiltrado);    
 })
 
-// btnCategorias.forEach((btn)=>{
-//     btn.addEventListener('click',(e)=>{
-
-//     const imagenFiltrada =  imagenesArray.filter (img => img.categoria === e.currentTarget.id);
-//     cargarGaleria(imagenFiltrada);    
-
-//     })
-// });
-
-
-// function cargarGaleria (){
-
-//     imagenesArray.forEach((imagen)=>{
-//         const div = document.createElement('div');
-//         div.classList.add('imagenGaleria');
-//         div.innerHTML = `
-//         <img src="${imagen.imagen}" alt="${imagen.nombre}" class="tamanoImgGaleria">
-//         `
-//         contenedorGaleria.appendChild(div);
-//     })
-
-// }; 

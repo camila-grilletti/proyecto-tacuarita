@@ -50,22 +50,7 @@ height: 100%;
    padding-right: 0px;
    margin-bottom: 40px;
 }
-/* .blockButtomHome{
-   display: none;
-   background-color: var(--verdeAgua);
-   border: none;
-   border-radius: var(--borderRadius);
-   width: 165px;
-   height: 40px;
-   color: white;
-}
 
-.blockButtomHome a{
-   font-family: var(--fontSecundaria);
-   font-size: 16px;
-   line-height: 20px;
-   align-items: center;
-} */
 
 .textoHeadDesktop{
    display: none;
@@ -85,6 +70,7 @@ height: 100%;
    width: 165px;
    height: 40px;
    color: white;
+   cursor: pointer;
 }
 .buttomHome a {
    font-family: var(--fontSecundaria);
@@ -824,21 +810,6 @@ height: 100%;
    }
 
 
-   /* .blockButtomHome{
-      display: block;
-      background-color: white;
-      border: none;
-      border-radius: var(--borderRadius);
-      width: 140px;
-      height: 44px;
-      color: var(--verdeAgua);
-      margin-top: 32px;
-      font-family: var(--fontSecundaria);
-      font-weight: 600;
-      line-height: 22px;
-      font-size: 16px;
-      align-items: center;
-   } */
   
    .textoEncabezado{
       position: absolute;

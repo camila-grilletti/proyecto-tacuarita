@@ -52,42 +52,6 @@ box-shadow: var(--boxShadow1);
 
 
 
-
-/* bloque que es un corredor */
-/* .boxQueEsUnCorredor{
-color: var(--textoAzul);
-font-family: var(--fontSecundaria);
-margin-top: 40px;
-display: flex;
-flex-direction: column;
-}
-
-.boxQueEsUnCorredor h2{
-    font-size: 18px;
-    line-height: 25px;
-    font-weight: 800;
-    margin-bottom: 20px;
-   text-align: justify;
-}
-
-.boxQueEsUnCorredor img{
-    width: 100%;
-   border-radius: 6.14px;
-   margin-top: 16px;
-   margin-bottom: 16px;
-}
-.boxQueEsUnCorredor p{
-    font-size: 14px;
-    line-height: 19px;
-    font-weight: 600;
- text-align: start;
-}
-
-.intesidadTexto{
-margin-top: 20px;
-font-weight: 800;
-} */
-
 @media screen and (min-width: 890px){
     
 
@@ -99,34 +63,6 @@ font-weight: 800;
         margin-bottom: 300px;
         }
     
-    /* bloque que es un corredor Desktop
-    .boxQueEsUnCorredor{
-    margin-top: 91px;
-    }
-    
-    .boxQueEsUnCorredor h2{
-        font-size: 36px;
-        line-height: 49px;
-        font-weight: 800;
-        margin-bottom: 16px;
-       text-align: justify;
-    }
-    
-    .boxQueEsUnCorredor img{
-       border-radius: var(--borderRadius);
-       margin-top: 40px;
-       margin-bottom: 40px;
-    }
-    .boxQueEsUnCorredor p{
-        font-size: 18px;
-        line-height: 25px;
-        font-weight: 600;
-    }
-    
-    .intesidadTexto{
-    margin-top: 20px;
-    font-weight: 800;
-    } */
 
 
 }
